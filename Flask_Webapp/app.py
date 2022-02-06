@@ -1,7 +1,6 @@
-from flask import Flask
+from project_files.init import app, db
 from flask import render_template
 
-app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('home.html')
